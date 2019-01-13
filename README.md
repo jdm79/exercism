@@ -1,5 +1,5 @@
 Exercism exercises:
 
-JavaScript, Python, Ruby, Swift
+JavaScript, Ruby, Swift
 
 https://exercism.io/
