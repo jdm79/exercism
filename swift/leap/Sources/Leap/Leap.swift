@@ -1,14 +1,14 @@
 struct Year {
 
-    var year: Int
+    var year: Bool
 
     init(calendarYear: Int) {
-        year = calendarYear
+        year = ((calendarYear % 4 == 0) && (calendarYear % 100 != 0)) || (calendarYear % 400 == 0)
     }
 
     var isLeapYear: Bool {
 
-        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+        return year;
 
     }
 
