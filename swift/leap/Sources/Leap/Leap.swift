@@ -1,15 +1,11 @@
 struct Year {
 
-    var year: Bool
+    var isLeapYear: Bool
 
     init(calendarYear: Int) {
-        year = ((calendarYear % 4 == 0) && (calendarYear % 100 != 0)) || (calendarYear % 400 == 0)
-    }
-
-    var isLeapYear: Bool {
-
-        return year;
-
+        
+        isLeapYear = ((calendarYear % 4 == 0) && (calendarYear % 100 != 0)) || (calendarYear % 400 == 0)
+    
     }
 
 }
